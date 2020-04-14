@@ -1,9 +1,10 @@
-const covid19ImpactEstimator = require('.././estimator');
 const xml = require('xml2js');
 const path = require('path');
 const fs = require('fs');
-// import covid19ImpactEstimator from '../estimator';
 const { validationResult } = require('express-validator');
+// import covid19ImpactEstimator from '../estimator';
+const covid19ImpactEstimator = require('.././estimator');
+
 exports.estimate = async (req, res, next) => {
     try {
         const errors = validationResult(req);
