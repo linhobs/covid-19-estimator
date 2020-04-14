@@ -1,4 +1,5 @@
 const { check, validationResult } = require('express-validator');
+
 const validationRules = () => {
     return [
         check('region').not().isEmpty(),

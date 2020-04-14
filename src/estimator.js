@@ -3,11 +3,9 @@ const covid19ImpactEstimator = (data) => {
     const severeImpact = {}
     const impact = {}
     const input = data
-
     //get the duration as number of days
     elapseTime = toDays(periodType, timeToElapse)
     const factor = Math.floor((elapseTime / 3));
-
 
     //challenge 1
     //currently infected cases
